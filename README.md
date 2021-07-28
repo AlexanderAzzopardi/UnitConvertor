@@ -3,9 +3,11 @@ The aim of this microservice is to be able to dynamicaly convert between units o
 
 # Getting Started
 #### Installation of Docker 
+![Docker](https://github.com/AlexanderAzzopardi/UnitConvertor/blob/main/Saved%20Pictures/DockerLogo.jfif)
 > <https://docs.docker.com/engine/install/>
 
 #### Installation of Dapr 
+![Dapr](https://github.com/AlexanderAzzopardi/UnitConvertor/blob/main/Saved%20Pictures/DaprLogo.jfif)
 > <https://docs.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/getting-started>
 
 #### Installation of UnitsNet
