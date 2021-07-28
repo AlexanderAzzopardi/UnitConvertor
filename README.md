@@ -3,18 +3,16 @@ The aim of this microservice is to be able to dynamicaly convert between units o
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+1.	Installation of Docker <https://docs.docker.com/engine/install/>
+2.	Installation of Dapr <https://docs.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/getting-started>
+3.	Installation of UnitsNet
+> dotnet add package UnitsNet --version 4.99.0
+4. Installation of RestClient
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Build and Run
+Run the following line of code in the teminal:
+> dapr run --app-id "unit-conversion" --app-port "5000" --dapr-grpc-port "50010" --dapr-http-port "5010" -- dotnet run
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+On the UnitConversionTest.http fIle click send request.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+ 
