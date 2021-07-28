@@ -1,2 +1,20 @@
-# UnitConvertor
-A microservice responsible for converting between two specified units via a unit type. 
+# Introduction 
+The aim of this microservice is to be able to dynamicaly convert between units of many different types. The microservice takes in a http file containing the unit type, the starting unit, the ending unit and the data being converted and outputs that converted data as a double with its unit type
+
+# Getting Started
+TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+1.	Installation process
+2.	Software dependencies
+3.	Latest releases
+4.	API references
+
+# Build and Test
+TODO: Describe and show how to build your code and run the tests. 
+
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
+
+If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
