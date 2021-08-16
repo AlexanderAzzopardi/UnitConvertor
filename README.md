@@ -15,15 +15,16 @@ Enter line into terminal
 > dotnet add package UnitsNet --version 4.99.0
 > 
 #### Installation of RestClient
-Search **RestClient** in the extension tab.
+Search **RestClient** in the extension tab and install
 
 # Build and Run
-Load up **Docker**.
 
-Enter line into terminal:
-> dapr run --app-id "unit-conversion" --app-port "5000" --dapr-grpc-port "50010" --dapr-http-port "5010" -- dotnet run
+* Make sure that **Docker Kubernetes** is running.
 
-On the *UnitConversionTest.http* fIle click send request on the unit you want converting.
+* Enter line into terminal:
+    > dapr run --app-id "unit-conversion" --app-port "5000" --dapr-grpc-port "50010" --dapr-http-port "5010" -- dotnet run
+
+* On the *UnitConversionTest.http* fIle click send request on the unit you want converting.
 
 # Creating a unit conversion file (.http)
 The file below is an example of a unit conversion of type "Length" converting from metres to millimetres with the starting value of 56.
@@ -36,11 +37,13 @@ The file below is an example of a unit conversion of type "Length" converting fr
         "unitStart": "m",
         "unitEnd": "mm"
     }
-This will output a value of
-> 56000mm
+This will output a value of;
+    > 56000mm
 
 ---
 
+# Units
+### Dimenstions
 The Base Dimension which can be converted between are:
 - Length
 - Mass
@@ -49,3 +52,6 @@ The Base Dimension which can be converted between are:
 - Temperature
 - Amount
  -LuminousIntensity
+ 
+### Abbreviations
+The units that are able to be converted between are in the *abb.txt* file. As these may be hard to determine what each abbreviation means, their meanings can be found in the *type.txt* file.
