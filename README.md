@@ -1,5 +1,5 @@
 # Introduction 
-The aim of this microservice is to be able to dynamicaly convert between units of many different types. The microservice takes in a http file containing the unit type, the starting unit, the ending unit and the data being converted and outputs that converted data as a double with its unit type.
+The aim of this microservice is to be able to dynamicaly convert between units of many different types. The microservice takes in a *.http* file containing the unit type, the starting unit, the ending unit and the data being converted.
 
 # Getting Started
 #### Installation of Docker 
@@ -9,13 +9,6 @@ The aim of this microservice is to be able to dynamicaly convert between units o
 #### Installation of Dapr 
 ![Dapr](https://github.com/AlexanderAzzopardi/UnitConvertor/blob/main/Saved%20Pictures/DaprLogo.jfif)
 > <https://docs.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/getting-started>
-
-#### Installation of UnitsNet
-Enter line into terminal
-> dotnet add package UnitsNet --version 4.99.0
-> 
-#### Installation of RestClient
-Search **RestClient** in the extension tab and install
 
 # Build and Run
 
@@ -27,7 +20,7 @@ Search **RestClient** in the extension tab and install
 * On the *UnitConversionTest.http* fIle click send request on the unit you want converting.
 
 # Creating a unit conversion file (.http)
-The file below is an example of a unit conversion of type "Length" converting from metres to millimetres with the starting value of 56.
+The file below is an example of a unit conversion of type "Length" converting from metres to millimetres with the starting value of 56 metres.
 
     POST http://localhost:5010/v1.0/invoke/unit-conversion/method/convert HTTP/1.1
     content-type: application/json
